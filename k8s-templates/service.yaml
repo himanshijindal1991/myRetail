@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-retail-service
+spec:
+  type: NodePort
+  ports:
+    - port: 9000
+      targetPort: 8080
+      nodePort: 31516
+  selector:
+    appname: myretail

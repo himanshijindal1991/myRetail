@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  myRetail:
+    image: myretailapp
+    ports:
+      - "9080:8080"
+    environment:
+      - DOWNSTREAM_URI=https://917ab034-be81-403f-8a1b-57a9c8cf5b31.mock.pstmn.io/productid
